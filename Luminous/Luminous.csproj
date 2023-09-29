@@ -10,6 +10,8 @@
     <SignAssembly>False</SignAssembly>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Authors>NightRain</Authors>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
