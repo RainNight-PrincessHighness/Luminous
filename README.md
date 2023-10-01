@@ -9,7 +9,7 @@
 # Documentation awaits writing.
 
 # Example
+<video id="video" controls="" preload="none" poster="封面">
+      <source id="mp4" src="https://l.luminouss.asia/mp4/RNUI.mp4" type="video/mp4">
+</videos>
 
-```C#
-
-```
