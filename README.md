@@ -14,3 +14,13 @@
 # Example && Click on the image to play the preview video
 [![](https://l.luminouss.asia/img/demo1.png)](https://l.luminouss.asia/mp4/RNUI.mp4)
 
+#### LWindow　
+
+```C#
+using Luminous._Windows;
+
+
+ LWindow lWindow = new LWindow();
+ lWindow.Show();
+```
+
