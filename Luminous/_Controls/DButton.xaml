@@ -1,0 +1,34 @@
+﻿<Button x:Class="Luminous._Controls.DButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Luminous._Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"             Loaded="Button_Loaded">
+    <Button.Resources>
+        <ResourceDictionary>
+            <Color x:Key="WindowBorderColor" A="1" R="255" G="255" B="255"/>
+            <SolidColorBrush x:Key="WButtonDark_MouseOver" Color="#474646"/>
+            <SolidColorBrush x:Key="WButtonDark_Pressed" Color="#646464"/>
+            <Color x:Key="AnimationBorder_Enter" A="70" R="56" G="56" B="56"/>
+        </ResourceDictionary>
+    </Button.Resources>
+    <Button.Template>
+        <ControlTemplate TargetType="Button">
+            <Border Name="Bor" CornerRadius="{Binding Path=CornerRadius}" Background="{TemplateBinding Background}">
+                <TextBlock IsHitTestVisible="True" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{TemplateBinding FontSize}" Foreground="{TemplateBinding Foreground}" FontFamily="{TemplateBinding FontFamily}"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="Bor" Property="Background" Value="{StaticResource ResourceKey=WButtonDark_MouseOver}"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="Bor" Property="Background" Value="{StaticResource ResourceKey=WButtonDark_Pressed}"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Button.Template>
+    <Grid>
+    </Grid>
+</Button>

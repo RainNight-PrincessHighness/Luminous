@@ -1,21 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Luminouss</Title>
+    <Title>Luminous</Title>
     <SignAssembly>False</SignAssembly>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Authors>NightRain</Authors>
+    <Authors>NightRain,RainNight</Authors>
+    <Description>Unique WPF UI library that integrates multiple window building methods  Please pay attention to the Github repository for the main content. The update progress of this library will be very slow.</Description>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/RainNight-PrincessHighness/Luminous</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/RainNight-PrincessHighness/Luminous</PackageProjectUrl>
+    <PackageIcon>templogo.jpg</PackageIcon>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="_Style\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="G:\OneDrive\图片\templogo.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

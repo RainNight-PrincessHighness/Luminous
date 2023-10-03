@@ -8,8 +8,14 @@ using System.Windows;
 
 namespace Luminous._Controls
 {
+    /// <summary>
+    ///   Override ScrollViewerBehavior
+    /// </summary>
     public static class ScrollViewerBehavior
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public static readonly DependencyProperty VerticalOffsetProperty = DependencyProperty.RegisterAttached("VerticalOffset", typeof(double), typeof(ScrollViewerBehavior), new UIPropertyMetadata(0.0, OnVerticalOffsetChanged));
         public static void SetVerticalOffset(FrameworkElement target, double value) => target.SetValue(VerticalOffsetProperty, value);
         public static double GetVerticalOffset(FrameworkElement target) => (double)target.GetValue(VerticalOffsetProperty);
